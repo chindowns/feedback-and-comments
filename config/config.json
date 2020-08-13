@@ -1,0 +1,17 @@
+{
+  "development": {
+    "username": "root",
+    "password": "password",
+    "database": "feedback"
+
+  },
+  "test": {
+    "username": "root",
+    "password": "password",
+    "database": "events_db"
+
+  },
+  "production": {
+    "use_env_variable": "JAWSDB_URL"
+  }
+}

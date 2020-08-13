@@ -1,0 +1,19 @@
+{
+  "name": "feedback-and-comments",
+  "version": "1.0.0",
+  "description": "This is an API serving feedback and comments to chindowns applications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "watch": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^1.6.4",
+    "sequelize": "^4.41.2"
+  }
+}
