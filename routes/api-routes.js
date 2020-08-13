@@ -3,7 +3,7 @@ var db = require("../models");
 module.exports = (app) => {
     // Post Feedback
     app.post("/api/feedback", (req, res) => {
-        console.log(req.body)
+        console.log(req)
         db.Feedback.create(req.body)
             .then(result => { console.log(result); res.send("Feedback received") })
             .catch(err => { console.log(err); res.status(401).json(err) })
