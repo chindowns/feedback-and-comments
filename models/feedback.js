@@ -4,13 +4,14 @@ module.exports = function (sequelize, DataTypes) {
     const Feedback = sequelize.define("Feedback", {
 
         site: {
-            type: DataTypes.TEXT,
+            type: DataTypes.STRING,
             allowNull: false,
         },
 
         email: {
-            type: DataTypes.TEXT,
+            type: DataTypes.STRING,
             allowNull: true,
+            validate: { isEmail: true }
         },
 
         feedback: {
