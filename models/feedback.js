@@ -5,7 +5,7 @@ module.exports = function (sequelize, DataTypes) {
 
         site: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: true,
         },
 
         email: {
@@ -15,10 +15,10 @@ module.exports = function (sequelize, DataTypes) {
         },
 
         feedback: {
-            type: DataTypes.TEXT,
+            type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                len: [2, 300]
+                len: [2, 255]
             }
         }
     });
