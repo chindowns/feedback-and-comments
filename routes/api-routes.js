@@ -2,12 +2,7 @@ var db = require("../models");
 
 module.exports = (app) => {
     // Post Feedback
-<<<<<<< HEAD
     app.post("/api/feedback/", (req, res) => {
-=======
-    app.post("/api/feedback", (req, res) => {
-        console.log("--------------req.body--------------------")
->>>>>>> master
         console.log(req.body)
         console.log("-------req----------")
         console.log(req)
